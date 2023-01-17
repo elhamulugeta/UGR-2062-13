@@ -1,0 +1,134 @@
+body{
+    font-size:17px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("/images/background.jpg");
+}
+body{
+    padding: 0; margin: 0; 
+   }
+.h1{
+   font-family: Jazz LET, fantasy;
+   line-height: 30px;
+   margin-top: 100px;
+   margin-bottom: 30px;
+}
+.h2{
+   line-height: 25px;
+}
+header{
+   color:black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: top;
+}
+.header{
+   font-family: Apple Chancery, 'Times New Roman', Times, serif;
+   padding-right: 150px;
+   font-weight: bold;
+   
+
+}
+header a{
+   text-decoration: none;
+   float: left;
+   font-size: 15px;
+}
+
+nav ul{
+   display: flex;
+}
+nav ul li{
+   list-style: none;
+}
+nav ul li a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 2px;
+   font-size: 10px;
+   margin-bottom: 50px;
+
+}
+a{
+   color:rgb(165, 114, 42);
+}
+
+a:hover{
+   transition: 2ms;
+}
+a:active{
+   color:black;
+}
+a:visited{
+   color:rgb(165, 114, 42);
+}
+#email{
+   padding-right:20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+   border-radius: 15px;
+   border:none;
+}
+#password{
+   padding-right:20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+   border-radius: 15px;
+   display: inline-block;
+   border: none;
+}
+#submit{
+   background-color: rgb(165, 114, 42);
+   border: none;
+   color:beige;
+   padding: 10px 15px;
+   border-radius: 15px;
+}
+#submit:hover{
+   cursor: pointer;
+   background-color: rgb(168, 114, 49,0.8);
+}
+.footer{
+   position: relative;
+   bottom: 0;
+   right:0;
+   text-align: center;
+}
+
+.h1{
+    padding-top: 150px;
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 60px;
+
+}
+.centered{
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5rem;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 25%;
+    line-height: 40px;
+}
+.welcome{
+    font-size: 50px;
+    position: absolute;
+    top:-4%;
+    left:60%;
+    font-family: Brush Script MT, Brush Script Std, cursive, 'Times New Roman', Times, serif;
+    color:rgb(165, 114, 42);
+    
+
+}
+.luggage{
+    max-height: 500px;
+    max-width:300px;
+    
+}
+

@@ -5,47 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Website and Author</title>
+    <link rel="stylesheet" href = "cssjs/about.css">
+
+    <script defer src = "cssjs/script.js"> </script>
 </head>
 <body>
-    <header>
-        <ul>
-            <li> <a href = "HomePage.html"> Home Page</a> </li>
-            <li> <a href = "hotels.html"> Hotels, Inns and Motels</a> </li>
-            <li> <a href = "museums.html"> Museums and Souvenir Shops</a> </li>
-            <li> <a href = "culturalattractions.html"> Cultural Holidays and Tourist Attractions</a> </li>
-            <li> <a href = "restaurants.html"> Affordable Restaurants </a> </li>
-            <li> <a href = "contact.html"> Contact </a> </li>
-            
-        </ul>
-        DISCOVER-R-US 
-        <a href = "subscribe.html" title = "Subscribe"> SUBSCRIBE </a>
-    </header>
-    <h1> ALL THE INFORMATION ABOUT ADDIS ABABA IN ONE PLACE!</h1>
-    <h2> About the Author and Website </h2>
-    <p> Welcome! This page is about the author and website!</p>
-    <h3> About the author:</h3>
-    <p> Elham Mulugeta is a 3rd year software engineering student. She has lived in Addis Ababa her whole life, and makes it a point to get more people to visit her city.</p>
-    <h4> About the website: </h4>
-    <p> This blog is dedicated to making Addis Ababa accessible to anyone and everyone who might be interested in visiting Addis Ababa. If this sounds like you, feel free to browse through the website! </p>
 
+    <header>
+        <section class = "header"> <a href = "HomePage.html" title = "Home Page"> DISCOVER-R-US</a>   </section>
+        <nav class = "navigation">
+        <ul class = "nav_list">
+                <li><a href = "museums.html" title = "Museums and souvenir shops"> Museums and Souvenir Shops</a></li>
+                    <li><a href = "hotels.html" title = "Hotels, Inns and Motels"> Hotels, Inns and Motels </a></li>
+                        <li><a href = "restaurants.html" title = "Affordable Restaurants"> Affordable Restaurants </a></li>
+                            <li><a href = "culturalattractions.html" title = "Cultural Holidays and Tourist Attractions"> Cultural Holidays and Tourist Attractions </a></li>
+                                <li> <a href = "contact.html" title = "Contact Page">  Contact </a></li>
+                                <li> <a href = "#form" title = "Subscribe"> SUBSCRIBE </a></li>
+        </ul>
+    </nav>
+</header>
+    <h1> This page is about the author and website!</h1>
+    
+    <div class = "centered">
+        <div class = "welcome"> 
+            Welcome!</div>
+            <img class = "luggage" src = "images/luggage.jpg" alt = "Picture of luggages"> 
+     <p><b> About the author:</b><br>
+     Elham Mulugeta is a 3rd year software engineering student. 
+        She has lived in Addis Ababa her whole life, 
+        and makes it a point to get more people to visit her city.<br></p>
+    <p><b> About the website: </b><br>
+    This blog is dedicated to making Addis Ababa accessible to anyone and everyone who might be interested in visiting Addis Ababa. 
+    If this sounds like you, feel free to browse through the website! </p>
+</div>
     <footer>
+        
         <p> Want more from our blog?</p>
         <p style = "display: inline-block;"> SUBSCRIBE TO OUR NEWSLETTER! </p>
-        <form>
+        <form id = "form">
+            <div class = "input-control">
         <label for = "email"> Email </label>
-         <input type = "text" id = "email" placeholder = "someone@example.com"> <br>
+         <input type = "text" id = "email" placeholder = "someone@example.com" name = "email" required> <br>
+         <div class = "error"> </div>
+         </div>
+         <div class = "input-control">
             <label for = "password"> Password </label>
-           <input type = "text" id = "password"><br>
-            <input type = "submit" value = "Subscribe">
+           <input type = "password" id = "password" name = "password" required><br>
+           <div class = "error"> </div>
+           </div>
+           <button id = "submit" type = "submit">Subscribe</button>
         </form>
         <form> 
-            <label for = "comments"> Comments:</label>
-            <textarea rows = "20" cols = "100" id = "comments"></textarea>
-            <input type = "submit" value = "Submit">
+            <label for = "comments" style="display: block;"> Comments:</label>
+            <textarea rows = "20" cols = "auto" id = "comments" style="display: block;"></textarea>
+            <button type = "submit" id = "submit"> Submit </button>
         </form>
         <p>© 2022 DISCOVER-R-US</p>
     </footer> 
 
-    
+
 </body>
 </html>

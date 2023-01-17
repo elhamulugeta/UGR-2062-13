@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Restaurants</title>
+
+    <link rel="stylesheet" href = "cssjs/restauarants.css">
+
+    <script defer src = "cssjs/script.js"> </script>
 </head>
 <body>
     <header>
-        <ul>
-            <li> <a href = "HomePage.html"> Home Page</a> </li>
-            <li> <a href = "hotels.html"> Hotels, Inns and Motels</a> </li>
-            <li> <a href = "museums.html"> Museums and Souvenir Shops</a> </li>
-            <li> <a href = "culturalattractions.html"> Cultural Holidays and Tourist Attractions</a> </li>
-            <li> <a href = "restaurants.html"> Affordable Restaurants </a> </li>
-            <li> <a href = "contact.html"> Contact </a> </li>
-            
-        </ul>
-        DISCOVER-R-US 
-        <a href = "subscribe.html" title = "Subscribe"> SUBSCRIBE </a>
+      <section class = "header"> <a href = "HomePage.html" title = "Home Page"> DISCOVER-R-US</a>   </section>
+      <nav class = "navigation">
+      <ul class = "nav_list">
+          <p><li><a href = "about.html" title = "About Page"> About </a></li></p>
+              <li><a href = "museums.html" title = "Museums and souvenir shops"> Museums and Souvenir Shops</a></li>
+                  <li><a href = "hotels.html" title = "Hotels, Inns and Motels"> Hotels, Inns and Motels </a></li>
+                          <li><a href = "culturalattractions.html" title = "Cultural Holidays and Tourist Attractions"> Cultural Holidays and Tourist Attractions </a></li>
+                          <li> <a href = "#form" title = "Subscribe"> SUBSCRIBE </a></li>
+      </ul>
+  </nav>
     </header>
 
     <h1> Affordable Restaurants </h1>
-    <section>
+    <section class = "main_body">
 <ul>
 <li>Kategna traditional restaurant </li>
 
@@ -87,22 +90,29 @@ Reach out on their website today and book your next reservation at Bella  pizzer
  </section>
 
  <footer>
-    <p> Want more from our blog?</p>
-    <p style = "display: inline-block;"> SUBSCRIBE TO OUR NEWSLETTER! </p>
-    <form>
-    <label for = "email"> Email </label>
-     <input type = "text" id = "email" placeholder = "someone@example.com"> <br>
-        <label for = "password"> Password </label>
-       <input type = "text" id = "password"><br>
-        <input type = "submit" value = "Subscribe">
-    </form>
-    <form> 
-        <label for = "comments"> Comments:</label>
-        <textarea rows = "20" cols = "100" id = "comments"></textarea>
-        <input type = "submit" value = "Submit">
-    </form>
-    <p>© 2022 DISCOVER-R-US</p>
-</footer>  
+        
+  <p> Want more from our blog?</p>
+  <p style = "display: inline-block;" id = "message"> SUBSCRIBE TO OUR NEWSLETTER! </p>
+  <form id = "form">
+      <div class = "input-control">
+  <label for = "email"> Email </label>
+   <input type = "text" id = "email" placeholder = "someone@example.com" name = "email" required> <br>
+   <div class = "error"> </div>
+   </div>
+   <div class = "input-control">
+      <label for = "password"> Password </label>
+     <input type = "password" id = "password" name = "password" required><br>
+     <div class = "error"> </div>
+     </div>
+     <button id = "submit" type = "submit">Subscribe</button>
+  </form>
+  <form> 
+      <label for = "comments" style="display: block;"> Comments:</label>
+      <textarea rows = "20" cols = "100%" id = "comments" style="display: block;"></textarea>
+      <button type = "submit" id = "submit"> Submit </button>
+  </form>
+  <p>© 2022 DISCOVER-R-US</p>
+</footer> 
     
 </body>
 </html>

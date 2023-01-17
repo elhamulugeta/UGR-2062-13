@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural Attractions in Addis Ababa</title>
+    <link rel = "stylesheet" href = "cssjs/culturalattractions.css">
+
+    <script defer src = "cssjs/script.js"> </script>
+
 </head>
 <body>
     <header>
-        <ul>
-            <li> <a href = "HomePage.html"> Home Page</a> </li>
-            <li> <a href = "hotels.html"> Hotels, Inns and Motels</a> </li>
-            <li> <a href = "museums.html"> Museums and Souvenir Shops</a> </li>
-            <li> <a href = "restaurants.html"> Affordable Restaurants </a> </li>
-            <li> <a href = "contact.html"> Contact </a> </li>
-            <li> <a href = "about.html"> About</a> </li>
-            
+        <section class = "header"> <a href = "HomePage.html" title = "Home Page"> DISCOVER-R-US</a>   </section>
+        <nav class = "navigation">
+        <ul class = "nav_list">
+            <li> <a href = "hotels.html" title = "Hotels, Inns and Motels"> Hotels, Inns and Motels</a> </li>
+            <li> <a href = "museums.html" title = "Museums and Souvenir Shops"> Museums and Souvenir Shops</a> </li>
+            <li> <a href = "restaurants.html" title = "Affordable Restauarants"> Affordable Restaurants </a> </li>
+            <li> <a href = "contact.html" title = "Contact"> Contact </a> </li>
+            <li> <a href = "about.html" title = "About"> About</a> </li>
+            <li> <a href = "#form" title = "Subscribe"> SUBSCRIBE </a></li>
         </ul>
-        DISCOVER-R-US 
-        <a href = "subscribe.html" title = "Subscribe"> SUBSCRIBE </a>
+    </nav>
     </header>
-    <h1> ALL THE INFORMATION ABOUT ADDIS ABABA IN ONE PLACE!</h1>
+    <h1 style = "font-size: large;"> ALL THE INFORMATION ABOUT ADDIS ABABA IN ONE PLACE!</h1>
+    <section class = "main_body">
     <p> It's no news that Ethiopia is a country brimming with culture. Addis Ababa, being the capital city of Ethiopia, is no exception to this.
         Below are our favorite cultural holidays and tourist attractions in no particular order!
     </p>
 
     <h2> Cultural Holidays </h2>
-    <section>
+    
         <ul> 
         <li> Nations, Nationalities and People's Day</li>
         <p> First on this list is the Ethiopian Nations and Nationalities day, celebrated on December 9 each year. This holiday is celebrated by everyone regardless of age, religion, or political association. 
@@ -42,14 +47,13 @@
         </p>
         <p> And speaking of culture in Ethiopia, here is a remix of a popular song titled "Addis Ababa"! </p>
         <audio controls autoplay>
-            <source src = "audio_MWQ4z3iV.m4a" type = "audio/m4a">
+            <source src = "audios/audio_MWQ4z3iV.m4a" type = "audio/m4a"> 
             Sorry, your browser does not support the audio element. Here's a link to the video on YouTube instead!
             <a href = "https://youtu.be/2OMK4mFZ96E"> Link </a>
         </audio>
-    </section>
     <h3> Tourist Attractions</h3>
 
-    <section>
+   
         <ul>
         <li>Friendship park </li>
         <p>Another popular tourist attraction in Addis Ababa is friendship park.  This park is one of the most popular parks in Ethiopia, and it just recently got built. It is located at 4 kilo, and houses the Science Institution of Addis Ababa.
@@ -62,26 +66,33 @@
         </ul>
 
 
-    </section>
+    
+</section>
 
-    <footer>
-        <p> Want more from our blog?</p>
-        <p style = "display: inline-block;"> SUBSCRIBE TO OUR NEWSLETTER! </p>
-        <form>
-        <label for = "email"> Email </label>
-         <input type = "text" id = "email" placeholder = "someone@example.com"> <br>
-            <label for = "password"> Password </label>
-           <input type = "text" id = "password"><br>
-            <input type = "submit" value = "Subscribe">
-        </form>
-        <form> 
-            <label for = "comments"> Comments:</label>
-            <textarea rows = "20" cols = "100" id = "comments"></textarea>
-            <input type = "submit" value = "Submit">
-        </form>
-        <p>© 2022 DISCOVER-R-US</p>
-    </footer>  
-
+<footer>
+        
+    <p> Want more from our blog?</p>
+    <p style = "display: inline-block;" id = "message"> SUBSCRIBE TO OUR NEWSLETTER! </p>
+    <form id = "form">
+        <div class = "input-control">
+    <label for = "email"> Email </label>
+     <input type = "text" id = "email" placeholder = "someone@example.com" name = "email" required> <br>
+     <div class = "error"> </div>
+     </div>
+     <div class = "input-control">
+        <label for = "password"> Password </label>
+       <input type = "password" id = "password" name = "password" required><br>
+       <div class = "error"> </div>
+       </div>
+       <button id = "submit" type = "submit">Subscribe</button>
+    </form>
+    <form> 
+        <label for = "comments" style="display: block;"> Comments:</label>
+        <textarea rows = "20" cols = "100" id = "comments" style="display: block;"></textarea>
+        <button type = "submit" id = "submit"> Submit </button>
+    </form>
+    <p>© 2022 DISCOVER-R-US</p>
+</footer> 
     
 </body>
 </html>

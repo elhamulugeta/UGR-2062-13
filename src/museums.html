@@ -5,28 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Museums </title>
+    <link rel="stylesheet" href="cssjs/museums.css">
+
+    <script defer src = "cssjs/script.js"> </script>
 </head>
 <body>
+    
     <header>
-        <ul>
-            <li> <a href = "HomePage.html"> Home Page</a> </li>
-            <li> <a href = "hotels.html"> Hotels, Inns and Motels</a> </li>
-            <li> <a href = "museums.html"> Museums and Souvenir Shops</a> </li>
-            <li> <a href = "culturalattractions.html"> Cultural Holidays and Tourist Attractions</a> </li>
-            <li> <a href = "restaurants.html"> Affordable Restaurants </a> </li>
-            <li> <a href = "contact.html"> Contact </a> </li>
-            
+        <section class = "header"> <a href = "HomePage.html" title = "Home Page"> DISCOVER-R-US</a>   </section>
+        <nav class = "navigation">
+        <ul class = "nav_list">
+            <li><a href = "about.html" title = "About Page"> About </a></li>
+            <li> <a href = "hotels.html" title = "Hotels, Inns and Motels"> Hotels, Inns and Motels</a> </li>
+            <li> <a href = "culturalattractions.html" title = "Cultural Holidays and Tourist Attractions"> Cultural Holidays and Tourist Attractions</a> </li>
+            <li> <a href = "restaurants.html" title = "Affordable Restaurants"> Affordable Restaurants </a> </li>
+            <li> <a href = "contact.html" title = "Contact"> Contact </a> </li>
+            <li> <a href = "#form" title = "Subscribe"> SUBSCRIBE </a></li>
         </ul>
-        DISCOVER-R-US 
-        <a href = "subscribe.html" title = "Subscribe"> SUBSCRIBE </a>
+    </nav>
     </header>
 
     <h1> Museums </h1>
-    <img src = "museum.jpg" alt = "Picture of a museum">
-    <p> One of our most favorite activities when in any city is visiting their museums. This is because  museums can be an excellent
+    <img class = "image" src = "images/museum.jpg" alt = "Picture of a museum">
+    <section class = "main_body">
+    
+    
+    <p class = "paragraph1"> One of our most favorite activities when in any city is visiting their museums. This is because  museums can be an excellent
         way to glimpse into the culture, history and style of any place. Addis Ababa is a city overflowing with history and culture, and these are some of our favorite museums to visit, with company, or by yourself!
     </p>
-    <ul>
+
+
+<ul>
+
         <li> Red Terror Museum </li>
         <p> We start our list with a very sad part of Ethiopian History, which occured during the <span style = "font-style: italic;"> Derg</span> regime.
         The <span style = "font-style: italic;"> Derg</span> regime is known for being an authoritarian government, and the Red Terror is a dark time in Ethiopian history when 
@@ -43,7 +53,7 @@
         </p>
     </ul>
 
-    <section>
+    
         <h1> Souvenir Shops </h1>
         <p> Souvenir shops are one of the most important part of any trip. Whether it's to get yourself something to remember the trip by, or whether you want to gift your friends and family something, souvenir shops are where it's at!
             And here at Discover-R-Us, souvenir shops have our whole hearts! Therefore, we have curated a list of our top spots to get yourself(or your family and friends) something to remember this trip by.
@@ -56,7 +66,7 @@
 
             <li>Tomoca</li> 
 
-            <p>he coffee there smells like freshly ground heaven. At tomoca you do not only drink coffee , you live the coffee.  
+            <p>The coffee there smells like freshly ground heaven. At tomoca you do not only drink coffee , you live the coffee.  
                 You can take ground coffee back to your place for you to enjoy later, and this is an excellent gift for all your coffee addicted friends!       
 
             <li> Bookstore </li>
@@ -66,22 +76,29 @@
                  Go ahead and check this book store out to get yourself or your friends a souvenir!
                 </p>
         </ul>
-</section>
+    </section>
 
     <footer>
+        
         <p> Want more from our blog?</p>
-        <p style = "display: inline-block;"> SUBSCRIBE TO OUR NEWSLETTER! </p>
-        <form>
+        <p style = "display: inline-block;" id = "message"> SUBSCRIBE TO OUR NEWSLETTER! </p>
+        <form id = "form">
+            <div class = "input-control">
         <label for = "email"> Email </label>
-         <input type = "text" id = "email" placeholder = "someone@example.com"> <br>
+         <input type = "text" id = "email" placeholder = "someone@example.com" name = "email" required> <br>
+         <div class = "error"> </div>
+         </div>
+         <div class = "input-control">
             <label for = "password"> Password </label>
-           <input type = "text" id = "password"><br>
-            <input type = "submit" value = "Subscribe">
+           <input type = "password" id = "password" name = "password" required><br>
+           <div class = "error"> </div>
+           </div>
+           <button id = "submit" type = "submit">Subscribe</button>
         </form>
         <form> 
-            <label for = "comments"> Comments:</label>
-            <textarea rows = "20" cols = "100" id = "comments"></textarea>
-            <input type = "submit" value = "Submit">
+            <label for = "comments" style="display: block;"> Comments:</label>
+            <textarea rows = "20" cols = "100" id = "comments" style="display: block;"></textarea>
+            <button type = "submit" id = "submit"> Submit </button>
         </form>
         <p>© 2022 DISCOVER-R-US</p>
     </footer> 
